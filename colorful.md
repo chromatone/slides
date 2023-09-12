@@ -111,18 +111,6 @@ growY: 0
 </v-clicks>
 </div>
 
-<!--
-The first thing I am going to pick is "Responsiveness".
-
-In Nuxt 3, we switched our default bundler to Vite, the tool well-known for its instant hot module replacement, or so call HMR. It allows you to see the change from your code to the app in nearly no time, and creates a great workflow and feedback loop.
-
-On the server-side rendering, we use `vite-node`, the same engine that powers Vitest, to do the HMR on the server-side.
-
-And finally, we introduced Nitro along with Nuxt 3, apart from many awesome features it provides, it also offers hot reload for server APIs on dev time. Remember the time you need to restart your node process every time you change to your backend API? It's no longer the case with Nitro!
-
-Combining all these tools, we are able to make your app reactive for any changes you make, no matter whether it's client code, ssr, or server-side APIs.
--->
-
 ---
 
 # Theory
@@ -231,10 +219,10 @@ So, by having the context of Nuxt, let's take one step forward -
 
 ---
 layout: center
-class: text-center
 growX: 50
 growY: 50
 growSize: 0.4
+class: bg-red-800
 ---
 
 <h1>Demo time!</h1>
