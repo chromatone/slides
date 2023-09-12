@@ -1,0 +1,17 @@
+{
+	"name": "@chromatone/coding-colorful-sounds",
+	"version": "0.0.1",
+	"private": true,
+	"packageManager": "pnpm@8.6.0",
+	"scripts": {
+		"ccs-dev": "slidev colorful.md --port 3030",
+		"ccs-build": "slidev build colorful.md --base /coding-colorful-sounds/ --out ./dist/coding-colorful-sounds/",
+		"mcr-dev": "slidev revision.md --port 3031",
+		"mcr-build": "slidev build revision.md --base /music-composition-revision/ --out ./dist/music-composition-revision"
+	},
+	"devDependencies": {
+		"@slidev/cli": "^0.42.1",
+		"@slidev/theme-default": "^0.21.2",
+		"playwright-chromium": "^1.34.3"
+	}
+}
