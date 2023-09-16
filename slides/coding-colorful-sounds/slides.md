@@ -7,6 +7,8 @@ css: unocss
 transition: fade-out
 blur: 0
 favicon: https://chromatone.center/media/logo/click-logo.svg
+growX: 10
+growY: 40
 ---
 
 <h1 flex="~ col">
@@ -105,6 +107,9 @@ growY: 0
 </v-clicks>
 </div>
 
+---
+growX: 10
+growY: 10
 ---
 
 # Theory
