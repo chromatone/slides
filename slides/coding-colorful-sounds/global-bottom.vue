@@ -70,7 +70,8 @@ const circles = computed(() => Array(formatter.value.growSteps || 6).fill(true).
     left: `${lerp(formatter.value?.growX || 0, mouseX.value, t)}%`,
     width: `${100 + i * 100}px`,
     height: `${100 + i * 100}px`,
-    zIndex: 100 - i
+    zIndex: 100 - i,
+    filter: `blur(${i * 4}px)`
   };
 }));
 
