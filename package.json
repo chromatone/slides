@@ -8,7 +8,7 @@
 		"ccs": "cd slides/coding-colorful-sounds && pnpm run dev",
 		"mcr": "cd slides/music-composition-revision && pnpm run dev",
 		"dev": "cd site && vitepress",
-		"build-all": "cd site && pnpm run build && cd ../slides/coding-colorful-sounds && pnpm run build && cd ../music-composition-revision && pnpm run build",
+		"build": "cd site && pnpm run build && cd ../slides/coding-colorful-sounds && pnpm run build && cd ../music-composition-revision && pnpm run build",
 		"serve": "cd site && pnpm run serve"
 	},
 	"devDependencies": {
