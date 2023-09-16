@@ -53,7 +53,7 @@ const mouseY = computed(() => {
 })
 
 const size = computed(() => 520 * +(formatter.value.growSize || 1) * scaleFactor.value)
-const blur = computed(() => 140 * +(formatter.value.growSize || 1) * scaleFactor.value)
+const blur = computed(() => 10 * +(formatter.value.growSize || 1) * scaleFactor.value)
 const followMouse = computed(() => formatter.value.growFollow || pressed.value)
 const left = computed(() => (followMouse.value ? mouseX.value : formatter.value.growX ?? '80'))
 const top = computed(() => (followMouse.value ? mouseY.value : formatter.value.growY ?? '30'))
@@ -70,13 +70,26 @@ watchEffect(() => {
 </script>
 
 <template>
-  <span absolute pointer-events-none rounded-full z--1 bg-gradient-to-rb from-cyan-400 via-pink-500 to-orange-500 op75
-    dark:op50 :class="transitionClass" :style="{
+  <div w-full h-full z-2 relative style="z-index: -2;"
+    :style="{ backgroundColor: formatter?.bg_color || 'hsla(160,70%,40%,1)' }">
+    <span z-1 absolute pointer-events-none rounded-full op85 dark:op50 :class="transitionClass" :style="{
+      backgroundColor: '#FCF200',
       top: `${top}%`,
       left: `${left}%`,
       width: `${size}px`,
       height: `${size}px`,
       transform: 'translate(-50%, -50%)',
-      filter: `blur(${blur}px)`,
+      filter: `blur(${0}px)`,
     }" @transitionend="updateClass" />
+    <!-- <span z-1 absolute pointer-events-none rounded-full op75 dark:op50 :class="transitionClass" :style="{
+      backgroundColor: 'hsl(0,50%,50%)',
+      top: `${10}%`,
+      left: `${30}%`,
+      width: `${size / 3}px`,
+      height: `${size / 3}px`,
+      transform: 'translate(-50%, -50%)',
+      filter: `blur(${0}px)`,
+    }" @transitionend="updateClass" /> -->
+
+  </div>
 </template>

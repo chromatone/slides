@@ -24,21 +24,15 @@ Denis Starov
 </div>
 
 ---
-layout: iframe-right
-url: https://chromatone.center
-class: my-cool-content-on-the-left
----
-
----
 layout: intro
 growX: 80
 growY: 90
 style: 'padding-left: 8rem;'
 ---
 
-# Denis Starov
+## Denis Starov
 
-<div class="leading-10 opacity-80">
+<div class="leading-10 opacity-90">
 Passionate open-source web-developer<br>
 Studying and composing music for 7 years<br>
 Author and developer of the Chromatone system<br>
@@ -148,10 +142,9 @@ growY: 90
 
 # Academy
 
-<iframe v-click src="https://chromatone.center/academy/"
+<iframe v-click src="https://academy.chromatone.center/"
   onload="this.style.visibility = 'visible';"
   scale-90 origin-top-right absolute right-0 top-0 bottom-0 w="75%" h="110%"
-  style="mix-blend-mode: lighten;filter:contrast(1.15);visibility:hidden;"
 />
 
 <v-clicks>
@@ -167,7 +160,14 @@ growX: 0
 growY: 50
 ---
 
-# Shop <span v-click> is updated!</span>
+<iframe v-click src="https://shop.chromatone.center/"
+  onload="this.style.visibility = 'visible';"
+  scale-90 origin-top-right absolute right-0 top-0 bottom-0 w="75%" h="110%"
+/>
+
+# Shop
+
+<h3 v-click> is updated!</h3>
 
 <v-clicks>
 
@@ -198,7 +198,7 @@ So, by having the context of Nuxt, let's take one step forward -
 
 ---
 
-# What will we do today
+# Chromatone is built with
 
 <div text-2xl>
 <v-clicks>
@@ -222,7 +222,6 @@ layout: center
 growX: 50
 growY: 50
 growSize: 0.4
-class: bg-red-800
 ---
 
 <h1>Demo time!</h1>
@@ -232,6 +231,13 @@ Let's go demo time!
 -->
 
 ---
+layout: iframe
+url: https://chromatone.center
+scale: 0.9
+growFollow: false
+---
+
+---
 layout: center
 class: text-center
 growX: 50
@@ -239,13 +245,6 @@ growY: 0
 ---
 
 # One more thing
-
----
-layout: iframe
-url: https://chromatone.center
-scale: 0.5
-growFollow: false
----
 
 ---
 layout: center
@@ -265,7 +264,7 @@ growX: 50
 growY: -20
 ---
 
-<pre text-3xl gap-4 flex font-mono class="select-none!">
+<pre bg-dark-300 p-8 rounded-xl text-3xl gap-4 flex font-mono class="select-none!">
 <span text-gray:50>pnpm</span>
 <span text-green>i</span>
 <span text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-teal-400 to-blue-500>use-chromatone</span>
@@ -280,7 +279,7 @@ growY: 120
 
 # Thank You
 
-Slides on [chromatone.center](https://chromatone.center)
+Slides at [slides.chromatone.center](https://slides.chromatone.center)
 
 <!--
 That's all for my talk. The slides can be found on my website. Thank you!

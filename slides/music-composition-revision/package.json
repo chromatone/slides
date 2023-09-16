@@ -1,6 +1,6 @@
 {
 	"private": true,
-	"name": "music-composition-revision",
+	"name": "@slides/music-composition-revision",
 	"scripts": {
 		"dev": "slidev --port 3030",
 		"build": "slidev build --base /music-composition-revision/ --out ../../dist/music-composition-revision/"

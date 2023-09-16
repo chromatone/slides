@@ -1,6 +1,6 @@
 {
 	"private": true,
-	"name": "coding-colorful-notes",
+	"name": "@slides/coding-colorful-sounds",
 	"scripts": {
 		"dev": "slidev --port 3030",
 		"build": "slidev build --base /coding-colorful-sounds/ --out ../../dist/coding-colorful-sounds/"
