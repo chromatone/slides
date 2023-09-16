@@ -3,15 +3,22 @@
 	"version": "0.0.1",
 	"private": true,
 	"packageManager": "pnpm@8.6.0",
+	"type": "module",
 	"scripts": {
-		"ccs-dev": "slidev colorful.md --port 3030",
+		"ccs": "slidev colorful.md --port 3030",
+		"mcr": "slidev revision.md --port 3031",
+		"dev": "vitepress",
+		"build": "vitepress build && pnpm run ccs-build && pnpm run mcr-build",
+		"serve": "vitepress serve --port 3090",
 		"ccs-build": "slidev build colorful.md --base /coding-colorful-sounds/ --out ./dist/coding-colorful-sounds/",
-		"mcr-dev": "slidev revision.md --port 3031",
-		"mcr-build": "slidev build revision.md --base /music-composition-revision/ --out ./dist/music-composition-revision"
+		"mcr-build": "slidev build revision.md --base /music-composition-revision/ --out ./dist/music-composition-revision/"
 	},
 	"devDependencies": {
 		"@slidev/cli": "^0.42.1",
 		"@slidev/theme-default": "^0.21.2",
 		"playwright-chromium": "^1.34.3"
+	},
+	"dependencies": {
+		"vitepress": "1.0.0-rc.13"
 	}
 }
