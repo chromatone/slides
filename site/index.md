@@ -1,6 +1,6 @@
 ---
-title: Talks
-description: Slides for Chromatone presentations
+title: Slides
+description: Slides for Chromatone talks and presentations
 ---
 
 Slides for Chromatone presentations

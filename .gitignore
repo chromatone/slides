@@ -3,3 +3,4 @@ dist
 slides-export.pdf
 .DS_Store
 .vitepress/cache
+site/.vitepress/cache

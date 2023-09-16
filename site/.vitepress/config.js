@@ -1,6 +1,6 @@
 import { defineConfig } from "vitepress"
 
 export default defineConfig({
-  title: "Chromatone talks",
-  outDir: './dist/'
+  title: "Chromatone Slides",
+  outDir: '../dist/'
 })
