@@ -62,16 +62,44 @@ function lerp(min, max, i) {
   return min + i * (max - min);
 }
 
+function exponentialLerp(min, max, i) {
+  // Normalize i to [0, 1]
+  var normalizedI = (i - min) / (max - min);
+
+  // Apply the exponential function
+  var expI = Math.exp(normalizedI);
+
+  // De-normalize to [min, max]
+  var denormalizedI = min + expI * (max - min);
+
+  return denormalizedI;
+}
+
+function logarithmicLerp(min, max, i) {
+  // Normalize i to [0, 1]
+  var normalizedI = (i - min) / (max - min);
+
+  // Apply the logarithmic function
+  var logI = Math.log(normalizedI + 1); // Add 1 to avoid log(0)
+
+  // De-normalize to [min, max]
+  var denormalizedI = min + logI * (max - min);
+
+  return denormalizedI;
+}
+
+
+
 const circles = computed(() => Array(formatter.value.growSteps || 6).fill(true).map((el, i) => {
-  const t = lerp(0, 1, i / (formatter.value.growSteps || 6));
+  const t = logarithmicLerp(0, 1, i / (formatter.value.growSteps || 6));
   return {
-    backgroundColor: `hsl(${(i * 60 + 30) / (formatter.value.growSteps || 6)}, 100%, 60%)`,
+    backgroundColor: `hsl(${(i * 90 - 60) / (formatter.value.growSteps || 6)}, 100%, 60%)`,
     top: `${lerp(formatter.value?.growY || 0, mouseY.value, t)}%`,
     left: `${lerp(formatter.value?.growX || 0, mouseX.value, t)}%`,
-    width: `${100 + i * 100}px`,
-    height: `${100 + i * 100}px`,
-    zIndex: 100 - i,
-    filter: `blur(${i * 4}px)`
+    width: `${100 * (formatter.value?.growDot || 1) + i * 100 * (formatter.value?.growDot || 1) * (formatter.value?.growSize || 1)}px`,
+    height: `${100 * (formatter.value?.growDot || 1) + i * 100 * (formatter.value?.growDot || 1) * (formatter.value?.growSize || 1)}px`,
+    zIndex: 100 + (formatter.value?.growOut ? i : -i),
+    filter: `blur(${i * 4 * (formatter.value?.growBlur || 1)}px)`
   };
 }));
 
@@ -92,7 +120,7 @@ watchEffect(() => {
   <div flex w-full h-full z-2 relative style="z-index: -2;"
     :style="{ backgroundColor: formatter?.bg_color || 'hsla(160,70%,40%,1)' }">
 
-    <span w-20 h-20 absolute pointer-events-none rounded-full op85 dark:op90 v-for="(circle, c) in circles" :key="c"
+    <span w-20 h-20 absolute pointer-events-none rounded-full v-for="(circle, c) in circles" :key="c"
       @transitionend="updateClass" :style="{ ...circle, transform: 'translate(-50%, -50%)', }"></span>
 
     <!-- <span z-1 absolute pointer-events-none rounded-full op85 dark:op90 :style="{
