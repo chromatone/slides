@@ -53,10 +53,55 @@ const mouseY = computed(() => {
 })
 
 const size = computed(() => 520 * +(formatter.value.growSize || 1) * scaleFactor.value)
-const blur = computed(() => 140 * +(formatter.value.growSize || 1) * scaleFactor.value)
+const blur = computed(() => 10 * +(formatter.value.growSize || 1) * scaleFactor.value)
 const followMouse = computed(() => formatter.value.growFollow || pressed.value)
 const left = computed(() => (followMouse.value ? mouseX.value : formatter.value.growX ?? '80'))
 const top = computed(() => (followMouse.value ? mouseY.value : formatter.value.growY ?? '30'))
+
+function lerp(min, max, i) {
+  return min + i * (max - min);
+}
+
+function exponentialLerp(min, max, i) {
+  // Normalize i to [0, 1]
+  var normalizedI = (i - min) / (max - min);
+
+  // Apply the exponential function
+  var expI = Math.exp(normalizedI);
+
+  // De-normalize to [min, max]
+  var denormalizedI = min + expI * (max - min);
+
+  return denormalizedI;
+}
+
+function logarithmicLerp(min, max, i) {
+  // Normalize i to [0, 1]
+  var normalizedI = (i - min) / (max - min);
+
+  // Apply the logarithmic function
+  var logI = Math.log(normalizedI + 1); // Add 1 to avoid log(0)
+
+  // De-normalize to [min, max]
+  var denormalizedI = min + logI * (max - min);
+
+  return denormalizedI;
+}
+
+
+const circles = computed(() => Array(formatter.value.growSteps || 12).fill(true).map((el, i) => {
+  const t = logarithmicLerp(0, 1, i / (formatter.value.growSteps || 12));
+  return {
+    backgroundColor: `hsl(${((i - 1) * 360) / (formatter.value.growSteps || 12)}, 100%, 60%)`,
+    top: `${lerp(formatter.value?.growY || 0, mouseY.value, t)}%`,
+    left: `${lerp(formatter.value?.growX || 0, mouseX.value, t)}%`,
+    width: `${100 * (formatter.value?.growDot || 1) + i * 100 * (formatter.value?.growDot || 1) * (formatter.value?.growSize || 1)}px`,
+    height: `${100 * (formatter.value?.growDot || 1) + i * 100 * (formatter.value?.growDot || 1) * (formatter.value?.growSize || 1)}px`,
+    zIndex: 100 + (formatter.value?.growOut ? i : -i),
+    filter: `blur(${i * 4 * (formatter.value?.growBlur || 1)}px)`
+  };
+}));
+
 
 const transitionClass = ref('')
 function updateClass() {
@@ -67,16 +112,38 @@ watchEffect(() => {
   if (!followMouse.value)
     updateClass()
 })
+
 </script>
 
 <template>
-  <span absolute pointer-events-none rounded-full z--1 bg-gradient-to-rb from-cyan-400 via-pink-500 to-orange-500 op75
-    dark:op50 :class="transitionClass" :style="{
-      top: `${top}%`,
-      left: `${left}%`,
+  <div flex w-full h-full z-2 relative style="z-index: -2;"
+    :style="{ backgroundColor: formatter?.bg_color || 'hsla(300,10%,95%,1)' }">
+
+    <div pointer-events-none z-100 fixed w-full h-full top-0 bottom-0 opacity-50
+      :style="{ backgroundImage: 'url(/texture.jpg)', backgroundSize: '30% 30%', }"></div>
+
+    <span opacity-30 w-20 h-20 absolute pointer-events-none rounded-full v-for="(circle, c) in circles" :key="c"
+      @transitionend="updateClass" :style="{ ...circle, transform: 'translate(-50%, -50%)', }"></span>
+
+    <!-- <span z-1 absolute pointer-events-none rounded-full op85 dark:op90 :style="{
+      backgroundColor: '#FCF200',
+      top: `${mouseY}%`,
+      left: `${mouseX}%`,
       width: `${size}px`,
       height: `${size}px`,
       transform: 'translate(-50%, -50%)',
-      filter: `blur(${blur}px)`,
-    }" @transitionend="updateClass" />
+      filter: `blur(${0}px)`,
+    }" />
+
+    <span z-1 transition-all duration-600 ease-in-out absolute pointer-events-none rounded-full op75 dark:op50 :style="{
+      backgroundColor: 'hsl(0,50%,50%)',
+      top: `${top}%`,
+      left: `${left}%`,
+      width: `${size / 3}px`,
+      height: `${size / 3}px`,
+      transform: 'translate(-50%, -50%)',
+      filter: `blur(${0}px)`,
+    }" /> -->
+
+  </div>
 </template>
