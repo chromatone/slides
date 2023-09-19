@@ -340,13 +340,57 @@ growY: -20
 <a text-2xl target="_blank" href="https://chromatone.center/support/docs/modules.html"> Documentation </a>
 
 ---
+growX: 50
+growY: 19.5
+growSize: 0.8
+growBlur: 4
+class: [text-center]
+---
+
+<img mx-auto mt-7 w-20 src="/logo.svg" />
+<div text-4xl mt-6 text-center font-bold> Get involved!</div>
+
+<div flex="~" justify-evenly items-start mt-20>
+<v-clicks>
+
+<div flex="~ col" items-center gap-2>
+<logos-instagram-icon text-2xl/>
+<div text-2xl font-bold>Follow and share</div>
+<div text-base op80>Follow and mention us</div>
+<a target="_blank" href="https://instagram.com/chromatone.center">@chromatone.center</a>
+</div>
+
+<div flex="~ col" items-center gap-2>
+<logos-reddit-icon text-2xl/>
+<div text-2xl font-bold>Discuss</div>
+<div text-base op80>Participate in our subreddit</div>
+<a target="_blank" href="https://www.reddit.com/r/chromatone/">r/chromatone.center</a>
+</div>
+
+<div flex="~ col" items-center gap-2>
+<bxs-donate-heart text-2xl />
+<div text-2xl font-bold>Donate</div>
+<div text-base op80>Become a GitHub sponsor</div>
+<a target="_blank" href="https://github.com/sponsors/chromatone">sponsors/chromatone</a>
+</div>
+
+<div flex="~ col" items-center gap-2>
+<logos-github-icon text-2xl/>
+<div text-2xl font-bold>Contribute</div>
+<div text-base op80>Fix bugs, add features, <br>improve performance</div>
+</div>
+
+</v-clicks>
+</div>
+
+---
 layout: intro
 class: text-center pb-5
 growX: 50
 growY: 120
 ---
 
-# Thank You
+# Now let's chat
 
 Slides at [slides.chromatone.center](https://slides.chromatone.center/coding-colorful-sounds/)
 

@@ -6,6 +6,7 @@
 		"build": "slidev build --base /coding-colorful-sounds/ --out ../../dist/coding-colorful-sounds/"
 	},
 	"devDependencies": {
+		"@iconify-json/bxs": "^1.1.7",
 		"@iconify-json/la": "^1.1.5",
 		"@iconify-json/logos": "^1.1.37",
 		"@iconify-json/ri": "^1.1.12"
