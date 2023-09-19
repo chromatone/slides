@@ -122,9 +122,6 @@ watchEffect(() => {
 
     <span w-20 h-20 absolute pointer-events-none rounded-full v-for="(circle, c) in circles" :key="c"
       @transitionend="updateClass" :style="{ ...circle, transform: 'translate(-50%, -50%)', }"></span>
-    <div id="hello" w-100vw h-100dvh z-100>
-      <img src="/wildtextures-seamless-paper-texture.jpg" />
-    </div>
 
     <!-- <span z-1 absolute pointer-events-none rounded-full op85 dark:op90 :style="{
       backgroundColor: '#FCF200',
