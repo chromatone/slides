@@ -283,7 +283,7 @@ layout: center
 <div p-2 flex items-center justify-center><img w-36 src="/directus.svg" /> </div>
 
 </v-clicks>
-</div> d
+</div>
 <!--
 
 -->
@@ -295,9 +295,11 @@ growY: 0
 class: [text-center]
 ---
 
-<h1>Show us the code!</h1>
+<logos-github-icon mb-4 text-8xl/>
 
-<h2 v-click mb-4>Open source MIT licence</h2>
+<h1 v-click>Open source</h1>
+
+<h2 v-click mb-4> MIT licence</h2>
 
 <a v-click text-2xl  target="_blank" href="https://github.com/chromatone/chromatone.center">
 github.com/chromatone/chromatone.center
@@ -308,14 +310,16 @@ Let's go demo time!
 
 ---
 layout: center
-class: text-center
+class: [text-center]
 growX: 50
 growY: 0
 ---
 
-<h1>One more thing</h1>
+<logos-npm mb-4 text-8xl />
 
-<h2 v-click mb-4>Available as a package</h2>
+<h1 v-click>Import and use</h1>
+
+<h2 v-click mb-4>NPM package available</h2>
 <a v-click text-2xl  target="_blank" href="https://www.npmjs.com/package/use-chromatone">
 npmjs.com/package/use-chromatone
 </a>
