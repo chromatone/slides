@@ -265,9 +265,6 @@ growY: 24
 
 <h2 font-bold>Visual language enables</h2>
 <h1 my-4> collaborative live composition</h1>
-<div text-2xl my-2> We can set multidimensional coordinates of a region </div>
-<div text-2xl my-2> in the endless space of possible sound combinations </div>
-<div text-4xl font-bold mt-4 my-2 v-click> and travel there together! </div>
 
 ---
 layout: center

@@ -7,11 +7,13 @@ css: unocss
 transition: fade-out
 blur: 0
 favicon: https://chromatone.center/media/logo/click-logo.svg
-growX: 10
+growX: 20
 growY: 40
 growBlur: 0.0001
 ---
-
+<div class="flex">
+<img w-60 src="/aux.svg"/>
+<div v-click mt-20>
 <h1 flex="~ col">
 <div font-bold text-7xl>Chromatone</div>
 <div flex="~ gap3" text-5xl mt-2 items-center>Coding Colorful Sounds</div>
@@ -20,8 +22,11 @@ growBlur: 0.0001
 <div uppercase text-lg tracking-widest>
 Denis Starov
 </div>
+</div>
 
-<div abs-br mx-10 my-14 flex="~ col" text-xl text-right>
+</div>
+
+<div v-click abs-br mx-10 my-14 flex="~ col" text-xl text-right>
   <div>Cleverse office, Bangkok, Thailand</div>
   <div text-lg opacity-50>22 Sep. 2023</div>
 </div>
