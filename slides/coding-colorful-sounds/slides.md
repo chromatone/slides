@@ -382,7 +382,8 @@ class: [text-center]
 <div flex="~ col" items-center gap-2>
 <logos-github-icon text-2xl/>
 <div text-2xl font-bold>Contribute</div>
-<div text-base op80>Fix bugs, add features, <br>improve performance</div>
+<div text-base op80>Fix bugs, add features</div>
+<a target="_blank" href="https://github.com/chromatone">github/chromatone</a>
 </div>
 
 </v-clicks>
@@ -403,4 +404,15 @@ Slides at [slides.chromatone.center](https://slides.chromatone.center/coding-col
 That's all for my talk. The slides can be found on my website. Thank you!
 -->
 
+---
+growX: 50
+growY: 50
+layout: center
+class: [text-center]
+---
+<div flex flex-col gap-8>
+<h2>Time for code!</h2>
+<a v-click text-2xl href="https://github.com/chromatone/chromatone.center">github.com/chromatone/chromatone.center</a>
+<a v-click text-2xl href="https://codesandbox.io/p/github/chromatone/chromatone.center/">codesandbox.io/p/github/chromatone/chromatone.center/</a>
+</div>
 <script setup></script>
