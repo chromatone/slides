@@ -11,10 +11,13 @@ growX: 20
 growY: 40
 growBlur: 0.0001
 ---
-<div class="flex">
+<div flex>
 <img w-60 src="/aux.svg"/>
-<div v-click mt-20>
-<h1 flex="~ col">
+<img absolute mt-28 ml-10 w-40 src="/logo.svg" />
+<div  mt-20>
+<h1 flex="~ col" gap-2>
+<div text-xl font-normal>Live coding meetup #2</div>
+
 <div font-bold text-7xl>Chromatone</div>
 <div flex="~ gap3" text-5xl mt-2 items-center>Coding Colorful Sounds</div>
 </h1>
@@ -26,15 +29,15 @@ Denis Starov
 
 </div>
 
-<div v-click abs-br mx-10 my-14 flex="~ col" text-xl text-right>
+<div  abs-br mx-10 my-14 flex="~ col" text-xl text-right>
   <div>Cleverse office, Bangkok, Thailand</div>
   <div text-lg opacity-50>22 Sep. 2023</div>
 </div>
 
 ---
 layout: intro
-growX: 80
-growY: 90
+growX: 75
+growY: 36
 style: 'padding-left: 6rem;'
 growBlur: 3
 ---
@@ -42,7 +45,7 @@ growBlur: 3
 <h10 text-60px font-bold> Denis Starov</h10>
 
 <div leading-10 opacity-90 text-2xl mt-2>
-Engineer, designer and photographer<br>
+Engineer, designer and philosopher<br>
 Passionate open-source web-developer<br>
 Studying and composing music for 10 years<br>
 Author and developer of the Chromatone system<br>
@@ -102,8 +105,8 @@ growSteps: 24
 <div> Colorful notes</div>
 <div> Geometrical rhythms</div>
 <div> Audio-visual feedback systems</div>
-<div> Universal way to communicate music </div>
-<div> Free and open-source online research hub </div>
+<div> New ways to communicate music </div>
+<div> Open-source online research hub</div>
 </v-clicks>
 </div>
 ---
@@ -150,7 +153,7 @@ growY: 10
 
 <v-clicks>
 
-- 11 modules
+- 10 modules
 - \>100 articles
 - Basic knowledge
 - Tightly packed
@@ -397,6 +400,7 @@ growY: 120
 ---
 
 # Now let's chat
+### Tell me your interests about the stack
 
 Slides at [slides.chromatone.center](https://slides.chromatone.center/coding-colorful-sounds/)
 
@@ -411,8 +415,8 @@ layout: center
 class: [text-center]
 ---
 <div flex flex-col gap-8>
-<h2>Time for code!</h2>
+<h1>Coding colorful sounds</h1>
 <a v-click text-2xl href="https://github.com/chromatone/chromatone.center">github.com/chromatone/chromatone.center</a>
-<a v-click text-2xl href="https://codesandbox.io/p/github/chromatone/chromatone.center/">codesandbox.io/p/github/chromatone/chromatone.center/</a>
+
 </div>
 <script setup></script>
