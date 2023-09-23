@@ -419,4 +419,5 @@ class: [text-center]
 <a v-click text-2xl href="https://github.com/chromatone/chromatone.center">github.com/chromatone/chromatone.center</a>
 
 </div>
+
 <script setup></script>

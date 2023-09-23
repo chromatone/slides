@@ -29,8 +29,8 @@ Denis Starov
 
 ---
 layout: intro
-growX: 80
-growY: 90
+growX: 75
+growY: 40
 style: 'padding-left: 6rem;'
 growBlur: 3
 ---
@@ -38,7 +38,7 @@ growBlur: 3
 <h10 text-60px font-bold> Denis Starov</h10>
 
 <div leading-10 opacity-90 text-2xl mt-2>
-Engineer, designer and photographer<br>
+Engineer, designer and philosopher<br>
 Passionate open-source web-developer<br>
 Studying and composing music for 10 years<br>
 Author and developer of the Chromatone system<br>
@@ -53,6 +53,8 @@ Author and developer of the Chromatone system<br>
   <div><a href="https://twitter.com/davay42" target="_blank" class="border-none! ">davay42</a></div>
   <la-telegram op50 ma text-xl ml4/>
   <div><a href="https://t.me/starov" target="_blank" class="border-none! ">starov</a></div>
+  <la-facebook op50 ma text-xl ml4/>
+  <div><a href="https://facebook.com/starov" target="_blank" class="border-none! ">d.starov</a></div>
   
 </div>
 
@@ -96,9 +98,9 @@ growBlur: 1
 <v-clicks>
 <div> Colorful notes</div>
 <div> Geometrical rhythms</div>
+<div> Audio-visual feedback systems</div>
 <div> New ways to communicate music </div>
 <div> Free and open-source online research hub</div>
-<div> In person music practice, jams and performances</div>
 </v-clicks>
 </div>
 ---
