@@ -286,6 +286,20 @@ That's all for my talk. The slides can be found on my website. Thank you!
 
 ---
 growX: 50
+growY: 50
+growSize: 4
+layout: center
+class: [text-center]
+---
+
+## Donate any number
+## to support Chromatone and
+## to influence our composition
+
+<img mt-10 mx-auto w-60 src="/qr.png" />
+
+---
+growX: 50
 growY: 44
 class:
 ---
