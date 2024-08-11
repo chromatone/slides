@@ -242,6 +242,29 @@ growY: 50
 />
 
 ---
+growX: 90
+growY: 10
+growSize: 0.7
+growBlur: 0.5
+---
+
+# Tutorship
+
+<v-clicks>
+
+- Teach
+- Mentor
+- Coach
+- Tutor
+
+</v-clicks>
+
+<iframe v-click rounded-xl m-4 src="https://tutor.chromatone.center/"
+  onload="this.style.visibility = 'visible';"
+  scale-90 origin-top-right absolute right-0 top-0 bottom-0 w="75%" h="105%"
+/>
+
+---
 layout: center
 growX: 66
 growY: 55
