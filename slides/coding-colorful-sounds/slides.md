@@ -16,10 +16,10 @@ growBlur: 0.0001
 <img absolute mt-28 ml-10 w-40 src="/logo.svg" />
 <div  mt-20>
 <h1 flex="~ col" gap-2>
-<div text-xl font-normal>Live coding meetup #2</div>
+<div text-xl font-normal>Javascript Bangkok 2.0.0</div>
 
-<div font-bold text-7xl>Chromatone</div>
-<div flex="~ gap3" text-5xl mt-2 items-center>Coding Colorful Sounds</div>
+<div font-bold text-7xl>Chromatone 3.0</div>
+<div font-normal flex="~ gap3" text-5xl mt-2 items-center>Visual Music Language</div>
 </h1>
 
 <div uppercase text-lg tracking-widest>
@@ -29,9 +29,13 @@ Denis Starov
 
 </div>
 
+
 <div  abs-br mx-10 my-14 flex="~ col" text-xl text-right>
-  <div>Cleverse office, Bangkok, Thailand</div>
-  <div text-lg opacity-50>22 Sep. 2023</div>
+<div   flex="~ col" text-xl text-right>
+   <svg ml-auto mb-4 h-auto text-orange w-44 width="280" height="282" viewBox="0 0 280 282" xmlns="http://www.w3.org/2000/svg" ><path d="M233.235 105.043C231.607 106.53 231.607 108.941 233.235 110.419L253.541 128.892V128.908L266.929 141.105C275.298 148.723 279.999 159.056 279.999 169.831V239.23C279.999 262.749 259.047 281.825 233.21 281.825H152.702C170.456 273.934 175.987 255.807 177.003 249.307V231.685C177.003 223.104 184.382 216.089 193.682 215.623C194.01 215.599 194.345 215.591 194.681 215.591C199.088 215.591 203.117 217.061 206.215 219.496L217.992 230.215C219.62 231.702 222.264 231.702 223.893 230.215C225.521 228.729 225.521 226.326 223.893 224.839L203.722 206.479L190.333 194.282C181.964 186.665 177.263 176.331 177.263 165.556V117.024C177.263 106.241 181.754 95.8593 189.838 87.9688L279.999 0V101.082C279.999 101.211 279.999 101.331 279.991 101.468C279.806 109.262 273.888 115.762 265.922 117.635C264.42 117.988 262.85 118.173 261.23 118.173C256.621 118.173 252.399 116.662 249.134 114.147L246.884 112.09L239.145 105.043C237.516 103.557 234.864 103.557 233.235 105.043Z" fill="currentColor"></path><path d="M168.882 117.026V242.366C168.882 264.157 149.474 281.827 125.534 281.827H0L54.6878 228.465C62.2509 221.081 72.7352 216.79 83.7902 216.493H127.398C129.698 216.493 131.57 214.789 131.57 212.692C131.57 210.595 129.698 208.892 127.398 208.892H114.211C106.924 208.369 100.965 203.532 99.4201 197.192C99.1599 196.14 99.0256 195.047 99.0256 193.922C99.0256 190.13 100.268 186.956 102.375 183.999C104.776 180.64 107.688 177.032 110.475 174.019L168.882 117.026Z" fill="currentColor"></path></svg>
+   </div>
+  <div>Microsoft office, Bangkok, Thailand</div>
+  <div text-lg opacity-50>18 October 2024</div>
 </div>
 
 ---
@@ -42,32 +46,35 @@ style: 'padding-left: 6rem;'
 growBlur: 3
 ---
 
+<img src="https://avatars.githubusercontent.com/u/6184449?v=4" rounded-full w-45 abs-tr mt-30 mr-40 alt="Denis avatar picture" />
+
 <h10 text-60px font-bold> Denis Starov</h10>
 
 <div leading-10 opacity-90 text-2xl mt-2>
-Engineer, designer and philosopher<br>
+Engineer, designer, philosopher and artist<br>
 Passionate open-source web-developer<br>
-Studying and composing music for 10 years<br>
-Author and developer of the Chromatone system<br>
+Studying and composing  music for 10+ years<br>
+Developing Chromatone system for 7+ years<br>
 <br>
 </div>
 
 <div my-10 text-2xl w-min flex="~ gap-1" items-center justify-center>
-
+ <v-clicks>
   <ri-github-line op50 ma text-xl ml4/>
   <div><a href="https://github.com/davay42" target="_blank" class="border-none! ">davay42</a></div>
   <ri-twitter-line op50 ma text-xl ml4/>
   <div><a href="https://twitter.com/davay42" target="_blank" class="border-none! ">davay42</a></div>
   <la-telegram op50 ma text-xl ml4/>
   <div><a href="https://t.me/starov" target="_blank" class="border-none! ">starov</a></div>
-  
-</div>
+  <la-facebook op50 ma text-xl ml4/>
+  <div><a href="https://facebook.com/starov" target="_blank" class="border-none! ">d.starov</a></div>
+  <la-link op50 ma text-xl ml4/>
+  <div><a href="https://starovdenis.com" target="_blank" class="border-none! ">starovdenis.com</a></div>
 
-<img src="https://avatars.githubusercontent.com/u/6184449?v=4" rounded-full w-45 abs-tr mt-30 mr-40/>
 
-<div flex="~ gap2">
-
-</div>
+<img w-36 rounded-xl z-10 absolute top-4 right-8 src="/QR-stcom.png" alt="QR code with link to starovdenis.com" />
+  </v-clicks>
+  </div>
 
 <!--
 
@@ -137,6 +144,11 @@ growSize: 0.8
 </div>
 
 <div flex="~ col" items-center gap-2>
+<div text-4xl font-bold>Tutorship</div>
+<div text-base op80>Personal guidance</div>
+</div>
+
+<div flex="~ col" items-center gap-2>
 <div text-4xl font-bold>Shop</div>
 <div text-base op80>Stickers and memos</div>
 </div>
@@ -153,9 +165,9 @@ growY: 10
 
 <v-clicks>
 
-- 10 modules
+- 12 modules
 - \>100 articles
-- Basic knowledge
+- Foundational knowledge
 - Tightly packed
 
 </v-clicks>
@@ -199,11 +211,10 @@ growBlur: 0.5
 
 <v-clicks>
 
+- Programs
+- Courses
 - Projects
 - Events
-- Partners
-- Tutors
-- Students
 
 </v-clicks>
 
@@ -317,6 +328,38 @@ Let's go demo time!
 -->
 
 ---
+growX: 90
+growY: 10
+growSteps: 12
+growSize: 0.7
+growBlur: 0.5
+---
+
+# Repo
+
+<a v-click text-2xl  target="_blank" href="https://github.com/chromatone/chromatone.center">
+<la-github op50 text-xl/>
+chromatone.center
+</a>
+
+<v-clicks>
+
+- Components/ *.vue
+- Content/ *.md
+- DB/ *.yaml
+- Use/ *.js
+- Theme/ *.vue
+
+</v-clicks>
+
+<iframe src="https://github1s.com/chromatone/chromatone.center"
+  onload="this.style.visibility = 'visible';"
+  v-click rounded-xl m-4  scale-90 origin-top-right absolute right-0 top-0 bottom-0 w="72%" h="105%"
+/>
+
+
+
+---
 layout: center
 class: [text-center]
 growX: 50
@@ -327,25 +370,210 @@ growY: 0
 
 <h1 v-click>Import and use</h1>
 
-<h2 v-click mb-4>NPM package available</h2>
+<h2 v-click mb-4>NPM packages available</h2>
 <a v-click text-2xl  target="_blank" href="https://www.npmjs.com/package/use-chromatone">
 npmjs.com/package/use-chromatone
+</a> <br />
+<a v-click text-2xl  target="_blank" href="https://www.npmjs.com/package/chromatone-db">
+npmjs.com/package/chromatone-db
 </a>
 
 ---
-layout: center
-class: text-center
 growX: 50
 growY: -20
 ---
 
-<pre bg-dark-300 p-8 rounded-xl text-3xl gap-4 flex font-mono class="select-none!">
+<pre bg-dark-300 p-8 w-80 mb-4 rounded-xl text-xl gap-4 flex font-mono class="select-none!">
 <span text-gray:50>pnpm</span>
 <span text-green>i</span>
 <span text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-teal-400 to-blue-500>use-chromatone</span>
 </pre>
 
-<a text-2xl target="_blank" href="https://chromatone.center/support/docs/modules.html"> Documentation </a>
+Useful audio-visual functions package
+
+<v-clicks>
+
+- Color calculations
+- Music theory state
+- Sound synthesis
+- Audio processing
+- MIDI processing
+
+</v-clicks>
+
+<pre v-click rounded-xl m-4  scale-90 origin-top-right absolute right-0 bg-light-900 bg-op-80 backdrop-blur p-4 text-sm top-0 bottom-0 overflow-scroll w="60%" h="105%">
+export {
+  Zo as FFTs,
+  _r as activeChroma,
+  xr as activeChromaMidi,
+  Ot as activeNotes,
+  I as audio,
+  Uo as bpm,
+  hu as calcBg,
+  Eo as channels,
+  vu as chromaColorMix,
+  Vo as createAndDownloadBlobFile,
+  Pt as createChannel,
+  pt as defaultScheme,
+  Ur as flats,
+  su as forwardMidi,
+  fr as freqColor,
+  Co as freqPitch,
+  ru as getCents,
+  au as getCircleCoord,
+  mu as getColorInfo,
+  sr as getFilename,
+  Fr as getPitchBend,
+  hr as getStandardFrequency,
+  ee as globalScale,
+  Mr as guessChords,
+  ur as initGetUserMedia,
+  cu as intervals,
+  dr as isInChroma,
+  it as layers,
+  no as lchToHsl,
+  iu as learnCC,
+  pu as levelColor,
+  K as master,
+  Mu as maxRatio,
+  Jo as meters,
+  me as mic,
+  y as midi,
+  cr as midiA,
+  jr as midiAttack,
+  nu as midiColor,
+  gt as midiFrequency,
+  qr as midiOnce,
+  zt as midiPlay,
+  Lr as midiRelease,
+  yn as midiStop,
+  ir as mimeExtMap,
+  To as naturals,
+  Tn as noteColor,
+  zo as noteNames,
+  _n as notes,
+  Ge as pitchColor,
+  ou as pitchFreq,
+  lr as pitchNoteOctave,
+  fu as playChroma,
+  lu as playChromaOnce,
+  Se as playKey,
+  Dr as playKeyOnce,
+  xn as playNote,
+  Xr as playNoteOnce,
+  rr as record,
+  Fe as recorder,
+  Et as recording,
+  yu as renderLoopsMidiFile,
+  gu as renderMidi,
+  Ae as rotateArray,
+  ot as scheme,
+  Qo as scopes,
+  Br as sendPitchBend,
+  Gr as setCC,
+  mr as setupKeyboard,
+  Wr as sharps,
+  uu as sortNotes,
+  is as srvb,
+  wn as stopAll,
+  du as stopChroma,
+  Dn as stopNote,
+  so as synthEnabled,
+  Pi as tap,
+  Z as tapTempo,
+  D as tempo,
+  Ko as tracks,
+  F as tuner,
+  gn as useAudio,
+  Su as useElemSynth,
+  We as useElementary,
+  ku as useFFT,
+  bu as useLoop,
+  Au as useMic,
+  wu as useMicrophone,
+  Po as useMidi,
+  rs as useParams,
+  vn as useRecorder,
+  xu as useSequence,
+  Eu as useSoundFont,
+  _u as useSvgMouse,
+  ss as useSynthVoices,
+  Ni as useTempo,
+  Du as useTuner
+};
+</pre>
+
+---
+growX: 50
+growY: -20
+---
+
+<pre bg-dark-300 p-8 rounded-xl w-80 text-xl gap-4 flex font-mono class="select-none!">
+<span text-gray:50>pnpm</span>
+<span text-green>i</span>
+<span text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-teal-400 to-blue-500>chromatone-db</span>
+</pre>
+
+<p>Ready to use music knowledge <br /> in convenient JSON format</p>
+
+<v-clicks>
+
+- Color names
+- Chords & Tabs
+- Chord progressions
+- Scales & Ragas
+- Meters & Rhythms
+
+
+</v-clicks>
+
+<pre v-click rounded-xl m-4  scale-90 origin-top-right absolute right-0 bg-light-900 bg-op-80 backdrop-blur p-4 text-sm top-0 bottom-0 overflow-scroll w="60%" h="105%">
+
+export {
+  o as BasicChords,
+  N as BasicScales,
+  u as ChordProgressions,
+  r as ChordsList,
+  L as ColorsList,
+  y as GoodScales,
+  U as GuitarTabs,
+  f as IntervalsList,
+  T as MelakartaRaga,
+  S as MetersList,
+  d as ModesChords,
+  C as RALColors,
+  x as RealBook,
+  B as RhythmsList,
+  R as RudimentsList,
+  b as ScaleList,
+  A as ScaleNames,
+  q as UkuleleTabs,
+  E as amyCodes,
+  z as countries
+};
+
+</pre>
+
+
+---
+layout: intro
+class: text-center pb-5
+growX: 50
+growY: 120
+---
+
+# Now let's code!
+## Fork the repo or open code sandbox
+
+[github.com/chromatone/chromatone.center](https://github.com/chromatone/chromatone.center)
+
+[codesandbox.io/p/github/chromatone/chromatone.center/](https://codesandbox.io/p/github/chromatone/chromatone.center/)
+
+<!--
+That's all for my talk. The slides can be found on my website. Thank you!
+-->
+
+
 
 ---
 growX: 50
@@ -376,10 +604,10 @@ class: [text-center]
 </div>
 
 <div flex="~ col" items-center gap-2>
-<bxs-donate-heart text-2xl />
-<div text-2xl font-bold>Donate</div>
-<div text-base op80>Become a GitHub sponsor</div>
-<a target="_blank" href="https://github.com/sponsors/chromatone">sponsors/chromatone</a>
+<la-book text-2xl />
+<div text-2xl font-bold>Book a session</div>
+<div text-base op80>Get my personal tutorship</div>
+<a target="_blank" href="https://tutor.chromatone.center">tutor.chromatone.center</a>
 </div>
 
 <div flex="~ col" items-center gap-2>
@@ -399,8 +627,8 @@ growX: 50
 growY: 120
 ---
 
-# Now let's chat
-### Tell me your interests about the stack
+# Now let's talk
+## Questions and answers
 
 Slides at [slides.chromatone.center](https://slides.chromatone.center/coding-colorful-sounds/)
 
@@ -408,16 +636,3 @@ Slides at [slides.chromatone.center](https://slides.chromatone.center/coding-col
 That's all for my talk. The slides can be found on my website. Thank you!
 -->
 
----
-growX: 50
-growY: 50
-layout: center
-class: [text-center]
----
-<div flex flex-col gap-8>
-<h1>Coding colorful sounds</h1>
-<a v-click text-2xl href="https://github.com/chromatone/chromatone.center">github.com/chromatone/chromatone.center</a>
-
-</div>
-
-<script setup></script>

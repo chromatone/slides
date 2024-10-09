@@ -13,18 +13,21 @@ growBlur: 0.0001
 class: [cursor-none]
 ---
 
-<h1 flex="~ col">
-<div font-bold text-7xl>Chromatone</div>
-<div flex="~ gap3" text-5xl mt-2 items-center>Music Composition Revision</div>
-</h1>
+<div flex="~ col" gap-2>
+<h1 font-bold text-7xl>Chromatone 3.0</h1>
+<p font-normal text-5xl mt-8 items-center>Visual Music Language Intro</p>
+</div>
 
 <div uppercase text-lg tracking-widest>
 Denis Starov
 </div>
 
 <div abs-br mx-10 my-14 flex="~ col" text-xl text-right>
-  <div>Place Coworking, Phuket, Thailand</div>
-  <div text-lg opacity-50>9 July 2024</div>
+   <svg ml-auto mb-4 h-auto text-orange w-44 width="280" height="282" viewBox="0 0 280 282" xmlns="http://www.w3.org/2000/svg" ><path d="M233.235 105.043C231.607 106.53 231.607 108.941 233.235 110.419L253.541 128.892V128.908L266.929 141.105C275.298 148.723 279.999 159.056 279.999 169.831V239.23C279.999 262.749 259.047 281.825 233.21 281.825H152.702C170.456 273.934 175.987 255.807 177.003 249.307V231.685C177.003 223.104 184.382 216.089 193.682 215.623C194.01 215.599 194.345 215.591 194.681 215.591C199.088 215.591 203.117 217.061 206.215 219.496L217.992 230.215C219.62 231.702 222.264 231.702 223.893 230.215C225.521 228.729 225.521 226.326 223.893 224.839L203.722 206.479L190.333 194.282C181.964 186.665 177.263 176.331 177.263 165.556V117.024C177.263 106.241 181.754 95.8593 189.838 87.9688L279.999 0V101.082C279.999 101.211 279.999 101.331 279.991 101.468C279.806 109.262 273.888 115.762 265.922 117.635C264.42 117.988 262.85 118.173 261.23 118.173C256.621 118.173 252.399 116.662 249.134 114.147L246.884 112.09L239.145 105.043C237.516 103.557 234.864 103.557 233.235 105.043Z" fill="currentColor"></path><path d="M168.882 117.026V242.366C168.882 264.157 149.474 281.827 125.534 281.827H0L54.6878 228.465C62.2509 221.081 72.7352 216.79 83.7902 216.493H127.398C129.698 216.493 131.57 214.789 131.57 212.692C131.57 210.595 129.698 208.892 127.398 208.892H114.211C106.924 208.369 100.965 203.532 99.4201 197.192C99.1599 196.14 99.0256 195.047 99.0256 193.922C99.0256 190.13 100.268 186.956 102.375 183.999C104.776 180.64 107.688 177.032 110.475 174.019L168.882 117.026Z" fill="currentColor"></path></svg>
+  
+  <div>Javascript Bangkok 2.0.0</div>
+  <div text-lg opacity-50>18 October 2024</div>
+ 
 </div>
 
 ---
@@ -38,15 +41,15 @@ growBlur: 3
 <h10 text-60px font-bold> Denis Starov</h10>
 
 <div leading-10 opacity-90 text-2xl mt-2>
-Engineer, designer and philosopher<br>
+Engineer, designer, philosopher and artist<br>
 Passionate open-source web-developer<br>
-Studying and composing music for 10 years<br>
-Author and developer of the Chromatone system<br>
+Studying and composing  music for 10+ years<br>
+Developing Chromatone system since 2017<br>
 <br>
 </div>
 
 <div my-10 text-2xl w-min flex="~ gap-1" items-center justify-center>
-
+ <v-clicks>
   <ri-github-line op50 ma text-xl ml4/>
   <div><a href="https://github.com/davay42" target="_blank" class="border-none! ">davay42</a></div>
   <ri-twitter-line op50 ma text-xl ml4/>
@@ -55,14 +58,16 @@ Author and developer of the Chromatone system<br>
   <div><a href="https://t.me/starov" target="_blank" class="border-none! ">starov</a></div>
   <la-facebook op50 ma text-xl ml4/>
   <div><a href="https://facebook.com/starov" target="_blank" class="border-none! ">d.starov</a></div>
-  
+  <la-link op50 ma text-xl ml4/>
+  <div><a href="https://starovdenis.com" target="_blank" class="border-none! ">starovdenis.com</a></div>
+
+
+<img w-36 rounded-xl z-10 absolute top-4 right-8 src="/QR-stcom.png" alt="QR code with link to starovdenis.com" />
+  </v-clicks>
 </div>
 
-<img src="https://avatars.githubusercontent.com/u/6184449?v=4" rounded-full w-45 abs-tr mt-30 mr-40/>
+<img src="https://avatars.githubusercontent.com/u/6184449?v=4" rounded-full w-45 abs-tr mt-30 mr-40 alt="Denis's avatar picture"/>
 
-<div flex="~ gap2">
-
-</div>
 
 <!--
 
@@ -131,6 +136,11 @@ growSize: 0.8
 </div>
 
 <div flex="~ col" items-center gap-2>
+<div text-4xl font-bold>Tutorship</div>
+<div text-base op80>Personal guidance</div>
+</div>
+
+<div flex="~ col" items-center gap-2>
 <div text-4xl font-bold>Shop</div>
 <div text-base op80>Stickers and memos</div>
 </div>
@@ -192,11 +202,10 @@ growBlur: 0.5
 
 <v-clicks>
 
+- Programs
+- Courses
 - Projects
 - Events
-- Partners
-- Tutors
-- Students
 
 </v-clicks>
 
@@ -222,6 +231,30 @@ Second step is for all the educated people to gather together and play some amaz
 Third step is to make such musical gatherings a part of the new post-scarcity culture worldwide. Chromatone makes music much easier for visual people to learn and practice, so it enables significantly more musicians in any given place. So there's always someone to jam with! 🤩 And everyone should be able to meet other musicians and improvise together for a couple of hours at least once a month. 👏 -->
 
 ---
+growX: 90
+growY: 10
+growSize: 0.7
+growBlur: 0.5
+---
+
+# Tutorship
+
+<v-clicks>
+
+- Any age 
+- Any level
+- Curiosity is key
+- Interactive theory
+- Guided practice
+
+</v-clicks>
+
+<iframe v-click rounded-xl m-4 src="https://tutor.chromatone.center/"
+  onload="this.style.visibility = 'visible';"
+  scale-90 origin-top-right absolute right-0 top-0 bottom-0 w="75%" h="105%"
+/>
+
+---
 growX: 110
 growY: 50
 ---
@@ -241,44 +274,25 @@ growY: 50
   scale-90 origin-top-right absolute right-0 top-0 bottom-0 w="75%" h="105%"
 />
 
----
-growX: 90
-growY: 10
-growSize: 0.7
-growBlur: 0.5
----
 
-# Tutorship
-
-<v-clicks>
-
-- Teach
-- Mentor
-- Coach
-- Tutor
-
-</v-clicks>
-
-<iframe v-click rounded-xl m-4 src="https://tutor.chromatone.center/"
-  onload="this.style.visibility = 'visible';"
-  scale-90 origin-top-right absolute right-0 top-0 bottom-0 w="75%" h="105%"
-/>
 
 ---
 layout: center
-growX: 66
-growY: 55
-class: [text-2xl]
+growX: 6
+growY: 15
 ---
 
-<h1 font-bold> So how do we speak Chromatone?</h1>
-<img v-click absolute right-62 bottom-42 mx-auto mt-7 w-40 src="/logo.svg" />
+<h1 font-bold>Open source <br /> web tech</h1>
 
-<div v-click>12 colors</div>
-<div v-click>12 notes</div>
-<div v-click>12 intervals</div>
-<div v-click>100+ chords and scales</div>
-<div v-click>1000+ rhythmic patterns</div>
+<v-clicks>
+
+- HTML
+- JavaScript
+- VSCode
+- pnpm
+- git
+
+</v-clicks>
 
 ---
 layout: center
@@ -288,8 +302,8 @@ growY: 24
 
 <img  absolute right-10 top-10 mx-auto mt-7 w-30 src="/logo.svg" />
 
-<h2 font-bold>Visual language enables</h2>
-<h1 my-4> collaborative live composition</h1>
+<h2 font-bold>Visual music language enables</h2>
+<span my-4 text-5xl font-normal>collaborative live composition</span>
 
 ---
 layout: center
