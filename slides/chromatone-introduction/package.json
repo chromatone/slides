@@ -1,8 +1,0 @@
-{
-	"private": true,
-	"name": "@slides/chromatone-introduction",
-	"scripts": {
-		"dev": "slidev --port 3030",
-		"build": "slidev build --base /chromatone-introduction/ --out ../../dist/chromatone-introduction/"
-	}
-}

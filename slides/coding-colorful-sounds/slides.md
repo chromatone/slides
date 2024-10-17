@@ -51,30 +51,27 @@ growBlur: 3
 <h10 text-60px font-bold> Denis Starov</h10>
 
 <div leading-10 opacity-90 text-2xl mt-2>
-Engineer, designer, philosopher and artist<br>
-Passionate open-source web-developer<br>
-Studying and composing  music for 10+ years<br>
-Developing Chromatone system for 7+ years<br>
-<br>
+
+<ul>
+<v-clicks>
+<li>Engineer, designer, philosopher and artist</li>
+<li>Passionate open-source web-developer</li>
+<li>Studying and composing  music for 10+ years</li>
+<li>Developing Chromatone system for 7+ years</li>
+</v-clicks>
+</ul>
+
 </div>
 
-<div my-10 text-2xl w-min flex="~ gap-1" items-center justify-center>
- <v-clicks>
-  <ri-github-line op50 ma text-xl ml4/>
-  <div><a href="https://github.com/davay42" target="_blank" class="border-none! ">davay42</a></div>
-  <ri-twitter-line op50 ma text-xl ml4/>
-  <div><a href="https://twitter.com/davay42" target="_blank" class="border-none! ">davay42</a></div>
-  <la-telegram op50 ma text-xl ml4/>
-  <div><a href="https://t.me/starov" target="_blank" class="border-none! ">starov</a></div>
-  <la-facebook op50 ma text-xl ml4/>
-  <div><a href="https://facebook.com/starov" target="_blank" class="border-none! ">d.starov</a></div>
-  <la-link op50 ma text-xl ml4/>
-  <div><a href="https://starovdenis.com" target="_blank" class="border-none! ">starovdenis.com</a></div>
-
-
-<img w-36 rounded-xl z-10 absolute top-4 right-8 src="/QR-stcom.png" alt="QR code with link to starovdenis.com" />
-  </v-clicks>
+<div v-click my-10 text-2xl w-min flex="~ gap-1" items-center justify-center>
+  <a flex items-center  href="https://github.com/davay42" target="_blank" class="border-none! "><ri-github-line op50 ma text-xl ml4/> davay42</a>
+  <a flex items-center  href="https://twitter.com/davay42" target="_blank" class="border-none! "><ri-twitter-line op50 ma text-xl ml4/> davay42</a>
+  <a flex items-center  href="https://t.me/starov" target="_blank" class="border-none! "><la-telegram op50 ma text-xl ml4/> starov</a>
+  <a flex items-center  href="https://facebook.com/starov" target="_blank" class="border-none! ">  <la-facebook op50 ma text-xl ml4/> d.starov</a>
+  <a flex items-center  href="https://starovdenis.com" target="_blank" class="border-none! ">  <la-link op50 ma text-xl ml4/> starovdenis.com</a>
   </div>
+
+  <img v-click w-36 rounded-xl z-10 absolute bottom-35 right-8 src="/QR-stcom.png" alt="QR code with link to starovdenis.com" />
 
 <!--
 
@@ -108,6 +105,7 @@ growBlur: 1
 growSteps: 24
 ---
 <div flex text-3xl flex-col gap-4 items-center text-center>
+<h2>Visual Music includes...</h2>
 <v-clicks>
 <div> Colorful notes</div>
 <div> Geometrical rhythms</div>
@@ -167,7 +165,7 @@ growY: 10
 
 - 12 modules
 - \>100 articles
-- Foundational knowledge
+- Deep knowledge
 - Tightly packed
 
 </v-clicks>
