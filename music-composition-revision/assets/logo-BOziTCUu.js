@@ -1,0 +1,1 @@
+var e=`/music-composition-revision/logo.svg`;export{e as t};

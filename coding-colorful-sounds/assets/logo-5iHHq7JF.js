@@ -1,0 +1,1 @@
+var e=`/coding-colorful-sounds/logo.svg`;export{e as t};
