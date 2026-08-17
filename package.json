@@ -11,16 +11,16 @@
 		"serve": "cd site && pnpm run serve"
 	},
 	"dependencies": {
-		"@vueuse/core": "^11.1.0",
-		"vue": "^3.5.11"
+		"@vueuse/core": "^14.4.0",
+		"vue": "^3.5.41"
 	},
 	"devDependencies": {
-		"@slidev/cli": "^0.46.1",
-		"@slidev/theme-default": "^0.21.2",
-		"vitepress": "1.4.0",
-		"@iconify-json/bxs": "^1.1.10",
-		"@iconify-json/la": "^1.1.8",
-		"@iconify-json/logos": "^1.1.42",
-		"@iconify-json/ri": "^1.1.20"
+		"@iconify-json/bxs": "^1.2.3",
+		"@iconify-json/la": "^1.2.1",
+		"@iconify-json/logos": "^1.2.13",
+		"@iconify-json/ri": "^1.2.10",
+		"@slidev/cli": "^52.19.0",
+		"@slidev/theme-default": "^0.25.0",
+		"vitepress": "^2.0.0-alpha.19"
 	}
 }

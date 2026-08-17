@@ -7,7 +7,7 @@
  * - growFollow: boolean - follow mouse, false to completely disable
  */
 // @ts-expect-error missing types
-import { currentRoute } from '@slidev/client/logic/nav.ts'
+import { useNav } from '@slidev/client'
 import { onKeyDown, useEventListener, useIdle, useMouse, whenever } from '@vueuse/core'
 import { computed, onMounted, ref, watchEffect } from 'vue'
 
@@ -15,7 +15,8 @@ const { x, y } = useMouse()
 const { idle } = useIdle(2000)
 const pressed = ref(false)
 const scaleFactor = computed(() => pressed.value ? 0.4 : 1)
-const formatter = computed(() => (currentRoute.value.meta?.slide as any)?.frontmatter || {})
+const { currentPage, currentSlideRoute, currentLayout, total } = useNav()
+const formatter = computed(() => (currentSlideRoute.value.meta?.slide as any)?.frontmatter || {})
 
 const container = ref<HTMLDivElement>()
 

@@ -3,7 +3,6 @@
     "allowJs": true,
     "module": "esnext",
     "target": "esnext",
-    "moduleResolution": "node",
     "allowSyntheticDefaultImports": true
   }
   // "exclude": [
