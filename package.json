@@ -1,8 +1,12 @@
 {
 	"name": "@slides/main",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"private": true,
 	"type": "module",
+	"engines": {
+		"node": "^24.x"
+	},
+	"packageManager": "pnpm@11.20.0",
 	"scripts": {
 		"ccs": "cd slides/coding-colorful-sounds && pnpm run dev",
 		"mcr": "cd slides/music-composition-revision && pnpm run dev",
